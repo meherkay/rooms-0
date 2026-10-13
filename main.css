@@ -1,0 +1,60 @@
+body{  background: black;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.border {width: 550px;
+         height:550px;
+         background-color: #FF1001;
+         grid-area: 1/1;
+         
+}
+.square {width: 280px;
+         height:280px;
+         background-color: #FE4C01;
+         grid-area: 1/1;
+}
+.rectangle {width: 59px;
+            height:280px;
+            background-color: #FE4D00;
+            grid-area: 1/1;
+            justify-self: center;
+            margin-right: 380px;
+}
+.leftwall {width: 30px;
+    height: 550px;
+    background-color: #EB0E81;
+
+    grid-area: 1 / 1;
+    justify-self: start;
+    align-self: center;
+
+    margin-left: 382px;
+
+    clip-path: polygon(
+        0% 0%,
+        100% 25%,
+        100% 75%,
+        0% 100%
+    );
+}
+
+.leftist {width: 60px;
+    height: 320px;
+    background-color: #DD0142;
+
+    grid-area: 1 / 1;
+    justify-self: start;
+    align-self: center;
+
+    margin-left: 270px;
+    margin-top: 30px;
+
+    clip-path: polygon(
+        11% 0%,
+        660% 25%,
+        100% 85%,
+        11% 100%
+    );
+}
