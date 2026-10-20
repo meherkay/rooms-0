@@ -1,14 +1,45 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
     <head>
-        <link rel="stylesheet" href="main.css">
-        <title>Rooms #0</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Rooms #0 — Reconstruction Puzzle</title><link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <div class="border"></div>
-        <div class="square"></div>
-        <div class="rectangle"></div>
-        <div class="leftwall"></div>
-        <div class="leftist"></div>
+        <main>
+            <header>
+                <div>
+                    <p class="eyebrow">INTERACTIVE ARTWORK STUDY</p>
+                    <h1>ROOMS <em>#0</em></h1>
+                    <p>The large orange plane and red background are already in place. Drag and rotate the remaining planes to reconstruct the room.</p>
+                </div>
+                <div class="actions">
+                    <button id="reference">Show reference</button>
+                    <button id="restart">Reshuffle</button>
+                </div>
+            </header>
+            <div class="layout">
+                <section class="play">
+                    <div class="hud">
+                        <span id="count">2 / 8 planes aligned</span>
+                        <span id="message">Orange plane and red background are already aligned</span>
+                    </div>
+                    <svg id="board" viewBox="0 0 705 702" role="img" aria-label="Drag and rotate the geometric planes to reconstruct Rooms number zero"><defs>
+                        <linearGradient id="red" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ff1406"/><stop offset="1" stop-color="#fc0909"/></linearGradient><linearGradient id="orange" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ff5700"/><stop offset="1" stop-color="#ff4800"/></linearGradient><linearGradient id="pink" x1="0" x2="0.8" y1="0" y2="1"><stop stop-color="#f00070"/><stop offset="1" stop-color="#e800a1"/></linearGradient><linearGradient id="crimson" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#dd004a"/><stop offset="1" stop-color="#e00050"/></linearGradient></defs><rect width="705" height="702" fill="#1a1a1a"/><g id="ghost" opacity="0.14" pointer-events="none"></g><g id="fixedPieces" pointer-events="none"></g><g id="pieces"></g></svg>
+                        <div class="help">
+                            <span>DRAG to move</span>
+                            <span>SCROLL or R / SHIFT+R to rotate selected plane</span>
+                            <span>DOUBLE-CLICK to reset its rotation</span>
+                        </div>
+                    </section><aside><div class="reference-panel" id="referencePanel"><div class="panel-head">REFERENCE <span>Rooms #0</span></div><svg id="referenceArt" viewBox="0 0 705 702" aria-label="Completed composition"></svg></div>
+                        <div class="artwork-info">
+                            <p class="eyebrow">ABOUT THE ARTWORK</p>
+                            <h2>Rafaël Rozendaal — <em>Rooms #0</em> (2026)</h2><p>Rafaël Rozendaal is a Dutch-Brazilian artist known for digital and internet-based artworks. <em>Rooms #0</em> uses bold geometric planes and vivid color to suggest an architectural space. The artwork is documented as on-chain generative JavaScript art on Ethereum. This interactive reconstruction invites you to explore its composition by arranging the individual planes.</p>
+                            <p class="credit">Unofficial educational recreation based on the provided artwork documentation.</p></div>
+                            <div class="instructions">
+                                <h2>How to play</h2>
+                                <p>Select a colored plane, then drag it over the dark canvas. Use a two-finger trackpad scroll or the R key to rotate it. When it is close to its original position and orientation, it snaps into place.</p>
+                            </div></aside></div><footer>Inspired by Rafaël Rozendaal · Rooms #0 (2026) · Unofficial interactive study</footer></main><script src="script.js"></script>
+    
     </body>
 </html>
